@@ -3,29 +3,8 @@
 require 'spec_helper'
 
 describe 'Token revocation', type: :request do
+  include_context 'feature'
   include_context 'fixtures'
-
-  def auth_headers(auth)
-    {
-      'Authorization' => auth,
-      'Accept' => 'application/json'
-    }
-  end
-
-  def sign_in(session_path, params)
-    post(session_path, params: params)
-    response.headers['Authorization']
-  end
-
-  def sign_out(destroy_session_path, auth)
-    delete(destroy_session_path,
-           headers: auth_headers(auth))
-  end
-
-  def get_with_auth(path, auth)
-    get(path,
-        headers: auth_headers(auth))
-  end
 
   context 'JWT user with JTI matcher revocation' do
     let(:user) { jwt_with_jti_matcher_user }
