@@ -631,7 +631,7 @@ An then, for example:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/waiting-for-dev/devise-jwt. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/thecodewall/authforge-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Release Policy
 
